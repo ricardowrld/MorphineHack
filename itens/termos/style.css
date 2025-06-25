@@ -3,6 +3,11 @@ body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: radial-gradient(circle at top left, #2d0d3a, #0d0f1b);
       color: #ffffff;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    body.loaded {
+        opacity: 1;
     }
     header {
       display: flex;
