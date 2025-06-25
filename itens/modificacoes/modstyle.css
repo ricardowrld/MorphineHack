@@ -1,7 +1,7 @@
 body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #120516;
+      background: radial-gradient(circle at top left, #2d0d3a, #0d0f1b);
       color: white;
       opacity: 0;
       transition: opacity 1s ease-in-out;
