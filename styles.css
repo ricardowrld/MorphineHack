@@ -9,7 +9,6 @@
       color: white;
       line-height: 1.6;
     }
-    
     header {
       display: flex;
       justify-content: space-between;
@@ -50,8 +49,6 @@
       text-decoration: none;
       transition: transform 0.2s ease;
       display: inline-block;
-      box-shadow: 0 0 20px #cc01ff80;
-
     }
     .cta-button:hover {
       transform: scale(1.1);
@@ -96,17 +93,15 @@
     .primary-btn {
       background-color: #9b59b6;
       color: white;
-      box-shadow: 0 0 20px #cc01ff80;
-
     }
     .secondary-btn {
       border: 1px solid #9b59b6;
       color: #9b59b6;
-      
     }
     .video-placeholder {
       width: 480px;
       height: 270px;
+      background: #000;
       border-radius: 10px;
     }
     .features {
