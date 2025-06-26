@@ -75,6 +75,7 @@
 
     h1 {
       color: #ffffff;
+      margin-top: 40px;
       margin-bottom: 60px;
     }
 
@@ -90,7 +91,7 @@
       background: #2a2a2a;
       border-left: 6px solid #b76eff;
       padding: 20px;
-      width: 280px;
+      width: 500px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
       transition: transform 0.2s;
@@ -102,7 +103,7 @@
 
     .post-it h3 {
       margin-top: 0;
-      color: #b76eff;
+      color: #fa65f7;
     }
 
     .post-it p {
