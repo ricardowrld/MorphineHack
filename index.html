@@ -51,10 +51,60 @@
     <!-- Icons or cards could be added here -->
   </section>
 
+  <section class="popular-mods scroll-reveal">
+  <h2>Mods <span>Populares</span></h2>
+  <p>Esses são os mods mais usados e mais baixados no nosso site, todos testados, seguros e atualizados.</p>
+  <div class="mod-grid">
+    <div class="mod-card">RickHub - Minecraft Hacks</div>
+    <div class="mod-card">Monaco AutoClicker</div>
+    <div class="mod-card">MechVibes - Keyboard Sounds</div>
+    <div class="mod-card">Hydra Launcher - Pirate Games</div>
+    <a class="cta-button" href="itens/modificacoes/modf.html">+</a>
+  </div>
+</section>
+
+<section class="how-to-install scroll-reveal">
+  <h2>Como <span>Instalar</span> os Mods</h2>
+  <div class="install-grid">
+    <ul>
+      <li>1. Escolha um mod na aba "Modificações"</li>
+      <li>2. Baixe o mod diretamente (sem anúncios)</li>
+      <li>3. Execute como administrador (se necessário)</li>
+      <li>4. Inicie o jogo normalmente</li>
+      <li>5. Divirta-se com os recursos ativados</li>
+    </ul>
+    <img src="ttimg.png" alt="Tutorial" class="install-img" />
+  </div>
+</section>
+
   <script>
      window.addEventListener("load", () => {
         document.body.classList.add("loaded");
      });
   </script>
+
+  <script>
+  const scrollElements = document.querySelectorAll(".scroll-reveal");
+
+  const revealOnScroll = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const options = {
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver(revealOnScroll, options);
+
+  scrollElements.forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
 </body>
 </html>
