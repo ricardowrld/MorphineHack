@@ -144,6 +144,7 @@
       width: 480px;
       height: 270px;
       border-radius: 10px;
+      margin-right: 20px;
     }
     .features {
       padding: 60px 40px;
@@ -165,7 +166,6 @@
 
     .popular-mods, .how-to-install {
   padding: 80px 40px;
-  
   text-align: center;
 }
 .popular-mods h2, .how-to-install h2 {
