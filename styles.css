@@ -143,7 +143,14 @@
 }
 .popular-mods h2, .how-to-install h2 {
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.how-to-install h2 {
+  margin-left: 2vw;
+}
+
+.how-to-install li {
+  margin-left: 5vw;
 }
 .popular-mods h2 span, .how-to-install h2 span {
   color: #9b59b6;
@@ -168,8 +175,8 @@
 }
 .mod-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px #8c39a180;
 }
-
 .how-to-install .install-grid {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +199,7 @@
   font-weight: 500;
 }
 .install-img {
-  margin-right: 9vw;
+  margin-right: 1vw;
   max-width: 500px;
   width: 100%;
   border-radius: 10px;
@@ -208,4 +215,41 @@
 .scroll-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+.step {
+      margin: 20px 0;
+      margin-left: 2vw;
+      padding-left: 30px;
+      position: relative;
+    }
+.step::before {
+      content: counter(step);
+      counter-increment: step;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #9900ff;
+      color: white;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .badge {
+  top: 8px;
+  left: 8px;
+  width: 30%;
+  background: #9c0d9e;
+  color: rgb(255, 255, 255);
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
